@@ -1,0 +1,12 @@
+<table>
+  <tr >
+    <td *ngFor="let pokerChip of pokerChipValues">
+      <img src="../../assets/pokerchip-{{pokerChip.color | lowercase}}.png" alt="{{pokerChip.color}} poker chip" width="100px" height="100px">
+    </td>
+  </tr>
+  <tr>
+    <td *ngFor="let pokerChip of pokerChipValues">
+      {{pokerChip.value}}
+    </td>
+  </tr>
+</table>
