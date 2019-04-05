@@ -1,10 +1,11 @@
 <div>
-    <app-countdown-timer></app-countdown-timer>
+    <app-countdown-timer [(amountOfTimesBlindsHaveRaised)]="amountOfTimesBlindsHaveRaised" ></app-countdown-timer>
     <br/>
-
 
   Current:
   Small Blind: {{startBlinds.smallBlind}}  |  Big blind: {{startBlinds.bigBlind}}
 
-  <app-all-poker-chip-values></app-all-poker-chip-values>
+  amountOfTimesBlindsHaveRaised: {{amountOfTimesBlindsHaveRaised}}
+
+  <!-- <app-all-poker-chip-values></app-all-poker-chip-values> -->
 </div>

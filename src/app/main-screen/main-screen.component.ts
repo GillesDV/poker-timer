@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Blinds } from '../blinds';
+import {CountdownTimerComponent} from '../countdown-timer/countdown-timer.component';
+import {allBlindValues} from './../blind-values';
 
 @Component({
   selector: 'app-main-screen',
@@ -7,10 +9,10 @@ import { Blinds } from '../blinds';
   styleUrls: ['./main-screen.component.css']
 })
 export class MainScreenComponent implements OnInit {
-  startBlinds: Blinds = {
-    bigBlind: 20,
-    smallBlind: 10
-  };
+  @ViewChild(CountdownTimerComponent) timerComponent;  
+  amountOfTimesBlindsHaveRaised: number = 0;
+
+  startBlinds: Blinds = allBlindValues[this.amountOfTimesBlindsHaveRaised];
 
   constructor() { }
 
