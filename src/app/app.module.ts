@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
 import { AllPokerChipValuesComponent } from './all-poker-chip-values/all-poker-chip-values.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
+import { GithubComponent } from './github/github.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainScreenComponent,
     AllPokerChipValuesComponent,
-    CountdownTimerComponent
+    CountdownTimerComponent,
+    GithubComponent
   ],
   imports: [
     BrowserModule,
